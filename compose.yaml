@@ -1,0 +1,29 @@
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - ./model/LLM:/model
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command:
+      [
+        "/model",
+        "--gpu-memory-utilization",
+        "0.7",
+        "--max-model-len",
+        "5K",
+        "--enable-auto-tool-choice",
+        "--tool-call-parser",
+        "llama3_json",
+      ]
+networks:
+  default:
+    external: true
+    name: ai_net
