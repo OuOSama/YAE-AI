@@ -1,11 +1,24 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_id = "meta-llama/Llama-3.2-1B-Instruct"
-save_folder = "./model/LLM"
+llm_id = "Qwen/Qwen2.5-1.5B-Instruct"
+llm_save_folder = "./model/LLM"
 
-tokenizer = AutoTokenizer.from_pretrained(model_id)
-model = AutoModelForCausalLM.from_pretrained(model_id)
+emb_id = "Qwen/Qwen3-Embedding-0.6B"
+emb_save_folder = "./model/EMB"
+# ===========================
+#  SAVE LLM Model
+# ===========================
+tokenizer = AutoTokenizer.from_pretrained(llm_id)
+model = AutoModelForCausalLM.from_pretrained(llm_id)
 
-# save model
-tokenizer.save_pretrained(save_folder)
-model.save_pretrained(save_folder)
+tokenizer.save_pretrained(llm_save_folder)
+model.save_pretrained(llm_save_folder)
+
+# ===========================
+#  SAVE EMB Model
+# ===========================
+tokenizer = AutoTokenizer.from_pretrained(emb_id)
+model = AutoModelForCausalLM.from_pretrained(emb_id)
+
+tokenizer.save_pretrained(emb_save_folder)
+model.save_pretrained(emb_save_folder)

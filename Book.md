@@ -1,7 +1,8 @@
 ## Model
 
 LLM: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-
+LLM: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+EMB: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 ## Server
 
 vLLMs
