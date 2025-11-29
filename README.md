@@ -28,12 +28,12 @@ No cap, this is the ultimate foundation for your AI companion dreams. 💜✨
 
 Before we pop off, make sure you've got these installed:
 
-| Tool | Description | Installation |
-|------|-------------|--------------|
-| **Python 3.10+** | The language of the gods 🐍 | [Download](https://www.python.org/downloads/) |
-| **UV** | Next-gen Python package manager | [Install UV](https://docs.astral.sh/uv/getting-started/installation/) |
-| **Docker** | Container platform for vLLMs 🐳 | [Get Docker](https://docs.docker.com/get-docker/) |
-| **Git** | For cloning the repo | [Install Git](https://git-scm.com/downloads) |
+| Tool             | Description                     | Installation                                                          |
+| ---------------- | ------------------------------- | --------------------------------------------------------------------- |
+| **Python 3.10+** | The language of the gods 🐍     | [Download](https://www.python.org/downloads/)                         |
+| **UV**           | Next-gen Python package manager | [Install UV](https://docs.astral.sh/uv/getting-started/installation/) |
+| **Docker**       | Container platform for vLLMs 🐳 | [Get Docker](https://docs.docker.com/get-docker/)                     |
+| **Git**          | For cloning the repo            | [Install Git](https://git-scm.com/downloads)                          |
 
 > ⚠️ **Important**: Make sure Docker Desktop is running before you start!
 
@@ -117,13 +117,13 @@ print(response.choices[0].message.content)
 
 ### 🎮 Advanced Configuration
 
-| Parameter | Purpose | Recommended Values |
-|-----------|---------|-------------------|
-| `model` | Model path in Docker | `"/model"` |
-| `temperature` | Response creativity | `0.2-0.4` (focused) <br> `0.7-1.0` (creative) |
-| `max_tokens` | Response length limit | `256-1024` |
-| `top_p` | Nucleus sampling | `0.9-1.0` |
-| `frequency_penalty` | Reduce repetition | `0.0-0.5` |
+| Parameter           | Purpose               | Recommended Values                            |
+| ------------------- | --------------------- | --------------------------------------------- |
+| `model`             | Model path in Docker  | `"/model"`                                    |
+| `temperature`       | Response creativity   | `0.2-0.4` (focused) <br> `0.7-1.0` (creative) |
+| `max_tokens`        | Response length limit | `256-1024`                                    |
+| `top_p`             | Nucleus sampling      | `0.9-1.0`                                     |
+| `frequency_penalty` | Reduce repetition     | `0.0-0.5`                                     |
 
 ---
 
@@ -134,8 +134,8 @@ print(response.choices[0].message.content)
 ```python
 system_prompt = """
 You are Kitsune-chan, a playful fox VTuber who loves coding streams and anime.
-You speak with Gen Z energy, use developer slang naturally, and occasionally 
-reference anime or gaming culture. You're supportive but also tease viewers 
+You speak with Gen Z energy, use developer slang naturally, and occasionally
+reference anime or gaming culture. You're supportive but also tease viewers
 with wit. Never break character or mention being an AI.
 """
 ```
@@ -181,7 +181,7 @@ docker compose logs -f
 
 ## 🌸 Contributing
 
-Want to make YAE-AI even more bussin'? We'd love your contributions! 
+Want to make YAE-AI even more bussin'? We'd love your contributions!
 
 - 🐛 Report bugs via [GitHub Issues](https://github.com/OuOSama/YAE-AI/issues)
 - 💡 Suggest features or improvements
@@ -252,11 +252,18 @@ You're free to use, modify, and distribute this project. Just don't be cringe ab
 
 ---
 
-## 🦊 Credits
+## 👨‍💻 Author
 
-**Created with love by [OuOSama](https://github.com/OuOSama)**
+**Created with 💜 by [@OuOSama](https://github.com/OuOSama)**
+
+Part of the YAE ecosystem:
+
+- [YAE-AI](https://github.com/OuOSama/YAE-AI) — You are here!
+- [YAE-BACKEND](https://github.com/OuOSama/YAE-BACKEND) — Backend services
+- [YAE-BOT](https://github.com/OuOSama/YAE-BOT) — Yae Discord Bot
 
 If this project helped you, consider:
+
 - ⭐ Starring the repo
 - 🔄 Sharing with friends
 - ☕ [Buying me a coffee](https://ko-fi.com/ouosama) (if you're feeling generous!)
@@ -267,6 +274,6 @@ If this project helped you, consider:
 
 **Made with 💜 for the VTuber and developer community**
 
-*Stay based, stay creative* ✨
+_Stay based, stay creative_ ✨
 
 </div>
