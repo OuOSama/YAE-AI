@@ -109,5 +109,5 @@ Want to make YAE-AI even better? Contributions are welcome! Feel free to:
 ---
 
 ## 📜 License
-
+# MIT
 ---
