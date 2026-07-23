@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "PKief.material-icon-theme",
+        "mhutchie.git-graph",
+        "tamasfe.even-better-toml",
+        "astral-sh.ty",
+        "charliermarsh.ruff"
+    ]
+}
