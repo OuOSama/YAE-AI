@@ -10,3 +10,8 @@ wheels/
 .venv
 
 .ruff_cache
+
+yae_tokenizer
+yae_tokenizer_raw
+
+data
