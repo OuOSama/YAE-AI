@@ -71,7 +71,7 @@ qwen_tokenizer = Qwen3_5Tokenizer(
         "<|im_end|>",
         "<image>",
         "<video>",
-    ],  
+    ],
 )
 qwen_tokenizer.save_pretrained("./yae_tokenizer")
 print("save เสร็จแล้วที่ ./yae_tokenizer")

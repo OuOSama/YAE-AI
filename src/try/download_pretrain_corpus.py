@@ -15,8 +15,8 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ปรับจำนวน document ตามขนาด corpus ที่ต้องการ
 # เป้าหมาย ~6B tokens รวม (ตาม Chinchilla ratio สำหรับโมเดล 300M)
-FINEWEB_DOCS = 3_000_000     # อังกฤษ (ประมาณ ~2-3B tokens)
-WIKI_TH_DOCS = None          # None = เอาทั้งหมด (Thai Wikipedia มีจำกัดอยู่แล้ว ไม่ใหญ่มาก)
+FINEWEB_DOCS = 3_000_000  # อังกฤษ (ประมาณ ~2-3B tokens)
+WIKI_TH_DOCS = None  # None = เอาทั้งหมด (Thai Wikipedia มีจำกัดอยู่แล้ว ไม่ใหญ่มาก)
 
 
 def download_fineweb_edu():
@@ -55,4 +55,4 @@ def download_thai_wikipedia():
 
 if __name__ == "__main__":
     download_thai_wikipedia()  # เล็กกว่า ทำก่อน เช็คว่า pipeline โอเค
-    download_fineweb_edu()     # ใหญ่กว่า ใช้เวลานาน
+    download_fineweb_edu()  # ใหญ่กว่า ใช้เวลานาน

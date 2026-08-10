@@ -6,6 +6,7 @@ os.makedirs("data", exist_ok=True)  # สร้างถ้ายังไม่
 # โหลด Tulu 3 SFT mix
 ds = load_dataset("allenai/tulu-3-sft-mixture", split="train")
 
+
 def format_chatml(example, system_prompt=None):
     """แปลง conversation list เป็น ChatML string เดียว"""
     parts = []
@@ -13,11 +14,12 @@ def format_chatml(example, system_prompt=None):
         parts.append(f"<|im_start|>system\n{system_prompt}<|im_end|>")
 
     for turn in example["messages"]:
-        role = turn["role"]        
+        role = turn["role"]
         content = turn["content"]
         parts.append(f"<|im_start|>{role}\n{content}<|im_end|>")
 
     return "\n".join(parts)
+
 
 # แปลงทั้ง dataset เป็น text พร้อม tokenize
 with open("data/sft_chatml.txt", "w", encoding="utf-8") as f:
