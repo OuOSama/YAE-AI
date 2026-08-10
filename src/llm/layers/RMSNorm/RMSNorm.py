@@ -5,7 +5,7 @@ from transformers.integrations import use_kernel_forward_from_hub
 
 # RMSNorm (Root Mean Square Normalization
 @use_kernel_forward_from_hub("RMSNorm")
-class Qwen3RMSNorm(nn.Module):
+class YaeRMSNorm(nn.Module):
     def __init__(self, hidden_size, eps: float = 1e-6) -> None:
         """
         Qwen3RMSNorm is equivalent to T5LayerNorm
