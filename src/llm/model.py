@@ -1,6 +1,13 @@
 from transformers import Qwen3Config, Qwen3ForCausalLM
 
-config = Qwen3Config(
+
+class YaeConfig(Qwen3Config): 
+    pass
+
+class YaeForCausalLM(Qwen3ForCausalLM):
+    pass
+
+config = YaeConfig(
     vocab_size=32000,
     hidden_size=768,
     intermediate_size=2048,
@@ -11,7 +18,7 @@ config = Qwen3Config(
     tie_word_embeddings=True,
 )
 
-model = Qwen3ForCausalLM(config)
+model = YaeForCausalLM(config)
 
 total_params = sum(p.numel() for p in model.parameters())
 
